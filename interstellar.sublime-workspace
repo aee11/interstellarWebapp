@@ -1,0 +1,465 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enco",
+				"encodedLetter"
+			],
+			[
+				"encoded",
+				"encodedNumber"
+			],
+			[
+				"encod",
+				"encodedNumber"
+			],
+			[
+				"set",
+				"setTimeout(function, milliseconds);"
+			],
+			[
+				"selec",
+				"selectQuery"
+			],
+			[
+				"select",
+				"selectValues"
+			],
+			[
+				"exe",
+				"executemany"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"box",
+				"border-box"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"label",
+				"labelName"
+			],
+			[
+				"stateInfo",
+				"stateInfoArray"
+			],
+			[
+				"lat",
+				"latexCodeSnippetSecondHalf"
+			],
+			[
+				"latexCodes",
+				"latexCodeSnippetFirstHalf"
+			],
+			[
+				"state",
+				"stateLatexString"
+			],
+			[
+				"init",
+				"initialStateString"
+			],
+			[
+				"initia",
+				"initialState"
+			],
+			[
+				"final",
+				"finalState"
+			],
+			[
+				"fina",
+				"finalState"
+			],
+			[
+				"stateInf",
+				"stateInfoArray"
+			],
+			[
+				"pathInfo",
+				"pathInfoArray"
+			],
+			[
+				"numb",
+				"numberOfPaths"
+			],
+			[
+				"path",
+				"pathNumber"
+			],
+			[
+				"remove",
+				"removeFromStateArray"
+			],
+			[
+				"number",
+				"numberOfStates"
+			],
+			[
+				"in",
+				"input	input - text"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/c/Users/Alexander/interstellar/package.json",
+			"settings":
+			{
+				"buffer_size": 328,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Snippet: Snippet: HTTP Create Server"
+			],
+			[
+				"dis",
+				"Nodejs::User File Settings"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"AngularJS: Toggle - Disable All Completions"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"run as",
+				"Build: Run as script"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Alexander/interstellar"
+	],
+	"file_history":
+	[
+		"/C/Users/Alexander/1.py",
+		"/C/Users/Alexander/node-js-getting-started/index.js",
+		"/c/Users/Alexander/interstellar/e",
+		"/C/Users/Alexander/s",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/node_modules/sqlite3/README.md",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/bin/www",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/routes/users.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/package.json",
+		"/C/Users/Alexander/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alexander/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/twitatron/server.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/views/layout.jade",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/index.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/public/css/style.css",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/verkefni11/public/index.html",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/twitatron/index.js",
+		"/C/Users/Alexander/AppData/Roaming/Sublime Text 3/Packages/User/Nodejs.sublime-settings",
+		"/C/Users/Alexander/AppData/Local/Temp/Temp1_verk10-demo.zip/main.php",
+		"/C/Users/Alexander/AppData/Local/Temp/Temp1_verk10-demo.zip/restclient.class.php",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Gagnasafnsfræði/Verkefni/Vikublað 10/gradie.sql",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Gagnasafnsfræði/Verkefni/Vikublað 10/verkefni3.py",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/example.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/helloworld.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/babysteps.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/myfirstio.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/myfirstasyncio.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/filteredls.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/makeitmodular.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/makeitmodulartest.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/httpclient.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/nodejs/gsfr.js",
+		"/C/wamp/www/vefforritun/verkefni10/views/page.php",
+		"/C/wamp/www/vefforritun/verkefni10/index.php",
+		"/C/wamp/www/vefforritun/verkefni9/todos.class.php",
+		"/C/wamp/www/vefforritun/verkefni9/views/todos.php",
+		"/C/wamp/www/vefforritun/verkefni10/restclient.class.php",
+		"/C/Users/Alexander/Downloads/APC-3.1.13/apc.php",
+		"/C/Users/Alexander/AppData/Local/Temp/Temp2_verkefni9-demo2.zip/todos.class.php",
+		"/C/wamp/www/vefforritun/verkefni9/views/header.php",
+		"/C/wamp/www/vefforritun/verkefni9/views/footer.php",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/angularVerkefni/angularVerkefni.sublime-project",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/angularVerkefni/index.html",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Side Projects/angularVerkefni/js/angular.min.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6a/index.html",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6a/jquery-1.11.1.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6a/jquery-2.1.1.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6/index.html",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6/script.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6/style.css",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6/jquery.validate.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 6/jquery-1.11.1.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Forritunarmál/Glósur/caml",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 5/verkefni5.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/default.css",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/jquery.js",
+		"/C/Users/Alexander/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/script.js",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/index.html",
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 1/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" + ",
+			"encoded",
+			"encode",
+			"parser",
+			"encode",
+			"blogEntries",
+			"/",
+			":/",
+			"/",
+			"\\",
+			"x",
+			"b",
+			"a",
+			"query",
+			"curr_key_items",
+			"query",
+			"plus",
+			"writeln",
+			"\\",
+			"Read the story",
+			"the",
+			"label",
+			"stateInfoArray"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/c/Users/Alexander/interstellar/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 180.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "interstellar.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Alexander\\OneDrive\\Háskóli Íslands\\3. önn\\Vefforritun\\Verkefni\\Verkefni 3\\verkefni3.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
