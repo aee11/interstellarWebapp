@@ -1,7 +1,27 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
     title= title
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/material.min.css')
+    link(rel='stylesheet', href='/stylesheets/material-wfont.min.css')
+    link(rel='stylesheet', href='/stylesheets/ripples.min.css')
+    
+    script(src='//code.jquery.com/jquery-1.10.2.min.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+    script(src='/javascripts/material.min.js')
+    script(src='/javascripts/ripples.min.js')
+    script(src='/javascripts/main.js')
   body
-    block content
+    .navbar.navbar-default
+      .navbar-collapse.collapse.navbar-responsive-collapse
+        ul.nav.navbar-nav
+          li.active 
+            a(href='/') Heim
+          li 
+            a(href='/dagbok') Gestabók
+    .container
+      block content
