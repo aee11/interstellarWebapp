@@ -9,7 +9,8 @@ var LocalStrategy = require('passport-local').Strategy;
 
 // db
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/interstellar');
+var dbUri = process.env.MONGOHQ_URL || 'mongodb://localhost:27017/interstellar';
+mongoose.connect(dbUri);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
