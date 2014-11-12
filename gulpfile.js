@@ -4,6 +4,7 @@ var plugins = require("gulp-load-plugins")({
   pattern: ['gulp-*', 'gulp.*', 'main-bower-files'],
   replaceString: /\bgulp[\-.]/
 });
+var app = require('./app')
 
 gulp.task('bowerjs', function() {
   return gulp.src(plugins.mainBowerFiles())
@@ -15,6 +16,15 @@ gulp.task('bowercss', function() {
   return gulp.src(plugins.mainBowerFiles())
     .pipe(plugins.filter('*.css'))
     .pipe(gulp.dest('public/stylesheets'));
+});
+
+gulp.task('watch', function() {
+  plugins.nodemon({
+    script: './bin/www',
+    ext: 'html js'
+  }).on('restart', function() {
+    console.log('restarted!');
+  });
 });
 
 // gulp.task('scripts', function() {
