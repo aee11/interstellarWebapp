@@ -13,6 +13,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
+  console.log(req.user);
+  console.log(req.session);
   res.render('signup', { title: 'Nýskráning' });
 });
 
@@ -26,8 +28,8 @@ router.post('/', function(req,res) {
     email: req.body.email,
     password: req.body.password
   });
-  //db.model(user);
-  console.log(db);
+  // db.model(user);
+  // console.log(db);
   // var username = req.body.username,
   //     email = req.body.email,
   //     password = req.body.password;

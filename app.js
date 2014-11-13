@@ -1,27 +1,29 @@
 var express = require('express');
+var session = require('express-session');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var pass = require('./config/pass');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
-// db
-var mongoose = require('mongoose');
-var dbUri = process.env.MONGOHQ_URL || 'mongodb://localhost:27017/interstellar';
-mongoose.connect(dbUri);
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function callback () {
-    console.log("connection to db established");
-});
+var db = require('./schemas/db');
+// var mongoose = require('mongoose');
+// var dbUri = process.env.MONGOHQ_URL || 'mongodb://localhost:27017/interstellar';
+// mongoose.connect(dbUri);
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function callback () {
+//     console.log("connection to db established");
+// });
 // var monk = require('monk');
 // var db = monk('localhost:27017/interstellar')
 
 var routes = require('./routes/index');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+var events = require('./routes/events');
 var users = require('./routes/users');
 
 var app = express();
@@ -36,6 +38,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({ secret: 'keyboard cat' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -48,6 +51,7 @@ app.use(function (req,res,next) {
 app.use('/', routes);
 app.use('/login', login);
 app.use('/signup', signup);
+app.use('/events', events);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

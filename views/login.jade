@@ -4,16 +4,20 @@ block content
   .row
     .col-md-6.col-md-offset-3
       .well
+        if message
+          p= message
+        if user
+          p= user
         fieldset 
           form.form-horizontal(action='/login' method='post')
             .form-group
-              label.col-lg-3.control-label(for='inputUsername') Notendanafn
+              label.col-lg-3.control-label(for='username') Notendanafn
               .col-lg-9
-                input.form-control.input-lg(type='text')
+                input#username.form-control.input-lg(type='text' name='username' pattern='.{3,}' title='Lágmark 3 stafir' required)
             .form-group
-              label.col-lg-3.control-label(for='inputPassword') Lykilorð
+              label.col-lg-3.control-label(for='password') Lykilorð
               .col-lg-9
-                input.form-control.input-lg(type='password' minlength=8)
+                input#password.form-control.input-lg(type='password' name='password' pattern='.{5,}' title='Lágmark 5 stafir' required)
             .form-group
               .col-lg-9.col-lg-offset-3
                 button.btn.btn-primary(type='submit') Innskrá

@@ -5,9 +5,10 @@ var mongoose = require('mongoose'),
     SALT_WORK_FACTOR = 10;
 
 var userSchema = new Schema({
-  username: { type: String, required: true },
+  username: { type: String, unique: true, required: true },
   email: { type: String, unique: true, required: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true },
+  events: [{ type: Schema.Types.ObjectId, ref: 'Event' }]
 });
 
 //bcrypt middleware
