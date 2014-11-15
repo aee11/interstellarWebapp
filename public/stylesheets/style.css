@@ -1,0 +1,8 @@
+.navbar-text {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  margin-left: 15px;
+}
+.list-group-item a {
+  color: #000;
+}

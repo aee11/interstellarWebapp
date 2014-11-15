@@ -4,23 +4,42 @@ block content
   .row
     .col-md-12
       .text-center
-        a(href='events/add').btn.btn-success.btn-flat.btn
+        a#newEvent(href='events/add').btn.btn-success.btn-flat.btn
           i.mdi-content-add 
           span Bæta við atburð
+        //- a(href='javascript:void(0)' data-toggle='dropdown').btn.btn-success.btn-flat.dropdown-toggle Sía eftir
+        //-   span.caret
+        //- ul.dropdown-menu
+        //-   li
+        //-     a(href='javascript:void(0)') NÁT103
+        //-   li
+        //-     a(href='javascript:void(0)') Stærðfræði
   .row
     .col-md-12
-      .text-center
-        .modal
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button' data-dismiss='modal' aria-hidden='true') x
-                h4.modal-title Nýr atburður
-              .modal-body
-                p Form
-              .modal-footer
-                button.btn.btn-default(type='button' data-dismiss='modal') Loka
-                button.btn.btn-material-lightgreen(type='button') Vista atburð
+      .modal#eventModal
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button' data-dismiss='modal' aria-hidden='true') x
+              h4.modal-title Nýr atburður
+            .modal-body
+              form.form-horizontal(action='/events' method='post')
+                .form-group
+                  label.col-lg-3.control-label(for='title') Titill
+                  .col-lg-9
+                    input#title.form-control.input-lg(type='text' name='title' required)
+                .form-group
+                  label.col-lg-3.control-label(for='course') Áfangi
+                  .col-lg-9
+                    input#course.form-control.input-lg(type='text' name='course')
+                .form-group
+                  label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
+                  .col-lg-9
+                    input#glosLocation.form-control.input-lg(type='text' name='glosLocation')
+                .form-group
+                  .modal-footer
+                    button.btn.btn-default(type='button' data-dismiss='modal') Loka
+                    button.btn.btn-material-lightgreen(type='submit') Vista atburð
   .row
     //- .col-md-2
     //-   ul.list-unstyled
@@ -33,130 +52,147 @@ block content
         //- .panel-heading
         //-   h3.panel-title Atburðir
         .panel-body
-          .list-group
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 13. nóv
-                h4.list-group-item-heading Vefforritun
-                p.list-group-item-text Node.js upprifjun
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
-            .list-group-item
-              .row-action-primary.checkbox
-                label
-                  input(type='checkbox')
-              .row-content
-                .least-content 14. nóv
-                h4.list-group-item-heading Forritunarmál
-                p.list-group-item-text Haskell verkefni
-            .list-group-separator
+          if events
+            .list-group
+              each singleEvent in events
+                .list-group-item
+                  .row-action-primary.checkbox
+                    label
+                      input(type='checkbox')
+                  a(href='javascript:void(0)')
+                    .row-content
+                      .least-content= singleEvent.nextReviewDate
+                      h4.list-group-item-heading= singleEvent.title
+                      p.list-group-item-text= singleEvent.courseName
+                .list-group-separator
+
+
+
+
+          //- .list-group
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 13. nóv
+          //-       h4.list-group-item-heading Vefforritun
+          //-       p.list-group-item-text Node.js upprifjun
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator
+          //-   .list-group-item
+          //-     .row-action-primary.checkbox
+          //-       label
+          //-         input(type='checkbox')
+          //-     .row-content
+          //-       .least-content 14. nóv
+          //-       h4.list-group-item-heading Forritunarmál
+          //-       p.list-group-item-text Haskell verkefni
+          //-   .list-group-separator

@@ -6,6 +6,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
+  if (req.user != null) {
+    res.redirect('/');
+  }
   res.render('login', { title: 'Login' });
 });
 
@@ -28,7 +31,8 @@ var postLogin = function(req, res, next) {
     }
     req.logIn(user, function(err) {
       if (err) { return next(err); }
-      return res.render('index', { title: "SUCCESS"});
+      return res.redirect('/events');
+      // return res.render('events', { title: "Atburðir", user: req.user });
     });
   })(req, res, next);
 };
