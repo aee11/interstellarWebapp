@@ -16,7 +16,6 @@ var getUserEvents = function (req, res, next) {
       return handleError(err);
     }
     req.events = user[0].events;
-    console.log(typeof(req.events[0]));
     next(); 
   });
 }
