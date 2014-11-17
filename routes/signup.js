@@ -19,7 +19,7 @@ router.get('/', function(req, res) {
   res.render('signup', { title: 'Nýskráning' });
 });
 
-router.post('/', function(req,res) {
+router.post('/', function (req,res) {
   console.log(req.body.username);
   var db = req.db;
 
@@ -42,7 +42,13 @@ router.post('/', function(req,res) {
         message: ''
       });
     } else {
-      res.render('index', {title: 'Til hamingju'});
+      req.logIn(user, function (err) { 
+        if (err) {
+          console.log("Gat ekki skráð inn eftir nýskráningu");
+        } else {
+          res.redirect('/events');
+        }
+      });
     }
   });
 });
