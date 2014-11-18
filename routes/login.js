@@ -31,6 +31,7 @@ var postLogin = function(req, res, next) {
     }
     req.logIn(user, function(err) {
       if (err) { return next(err); }
+      res.locals.user = { username: user.username, email: user.email };
       return res.redirect('/events');
       // return res.render('events', { title: "Atburðir", user: req.user });
     });

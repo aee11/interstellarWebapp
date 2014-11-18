@@ -22,9 +22,11 @@ var db = require('./schemas/db');
 
 var routes = require('./routes/index');
 var login = require('./routes/login');
+var logout = require('./routes/logout');
 var signup = require('./routes/signup');
 var events = require('./routes/events');
-var jsonEvents = require('./routes/jsonEvents');
+var myEvents = require('./routes/myEvents'); // angular test
+var api = require('./routes/api');
 var users = require('./routes/users');
 
 var app = express();
@@ -51,9 +53,11 @@ app.use(function (req,res,next) {
 
 app.use('/', routes);
 app.use('/login', login);
+app.use('/logout', logout);
 app.use('/signup', signup);
 app.use('/events', events);
-app.use('/jsonEvents', jsonEvents);
+app.use('/myEvents', myEvents);
+app.use('/api', api);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

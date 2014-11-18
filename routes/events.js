@@ -13,7 +13,7 @@ var pass = require('../config/pass');
 var getUserEvents = function (req, res, next) {
   User.find({ _id: req.user._id }).populate('events').lean().exec(function (err, user) {
     if (err) {
-      return handleError(err);
+      return next(err);
     }
     req.events = user[0].events;
     next(); 

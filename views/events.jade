@@ -52,7 +52,7 @@ block content
         //- .panel-heading
         //-   h3.panel-title Atburðir
         .panel-body
-          if events
+          if events.length > 0
             .list-group
               each singleEvent in events
                 .list-group-item
@@ -65,7 +65,8 @@ block content
                       h4.list-group-item-heading= singleEvent.title
                       p.list-group-item-text= singleEvent.courseName
                 .list-group-separator
-
+          else
+            h3.text-center Þú hefur ekki skráð neina atburði.
 
 
 

@@ -1,12 +1,11 @@
 doctype html
-html
+html(ng-app='interstellarApp')
   head
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     title= title
     link(rel='stylesheet', href='/stylesheets/normalize.css')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/material.min.css')
     link(rel='stylesheet', href='/stylesheets/material-wfont.min.css')
     link(rel='stylesheet', href='/stylesheets/ripples.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -14,6 +13,9 @@ html
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
     script(src='/javascripts/material.min.js')
     script(src='/javascripts/ripples.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js')
+    script(src='controllers/interstellarController.js')
+    script(src='services/interstellarServices.js')
     script(src='/javascripts/main.js')
   body
     .navbar.navbar-material-lightgreen
@@ -25,15 +27,17 @@ html
         a.navbar-brand(href='javascript:void(0)') Logo
       .navbar-collapse.collapse.navbar-responsive-collapse
         ul.nav.navbar-nav
-          li.active 
+          li(class=(title === 'Express' ? 'active' : ''))
             a(href='/') Heim
-          if user
-            li 
+          if locals.user
+            li(class=(title === 'Mínir atburðir' ? 'active' : ''))
               a(href='/events') Atburðir
         ul.nav.navbar-nav.navbar-right
-          if user
+          if locals.user
             li
-              p.navbar-text Skráður inn sem <strong>#{user.username}</strong>.
+              p.navbar-text Skráður inn sem <strong>#{locals.user.username}</strong>. 
+            li    
+              a(href='/logout') Útskrá
           else
             li 
               a(href='/login') Innskrá
