@@ -20,6 +20,13 @@ var getEvents = function (req, res, next) {
   }
 }
 
-router.get('/:username/events', pass.ensureAuthenticated, getEvents);
+router.get('/user/:username/events', pass.ensureAuthenticated, getEvents);
+
+var getUser = function (req, res, next) {
+  res.json({username:req.user.username});
+}
+
+router.get('/username', pass.ensureAuthenticated, getUser);
+
 
 module.exports = router;

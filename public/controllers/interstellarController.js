@@ -11,7 +11,7 @@ interstellarApp
   function getEvents () {
     var request = $http({
       method: 'get',
-      url: 'api/alex/events',
+      url: 'api/user/alex/events',
     });
     return request.then(handleSuccess, handleError);
   }

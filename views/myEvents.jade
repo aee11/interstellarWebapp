@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  main(ng-controller='eventListController')
+  main(ng-controller='EventListController')
     .row
       .col-md-12
         .text-center
@@ -44,9 +44,9 @@ block content
                   .row-action-primary.checkbox
                     label
                       input(type='checkbox')
-                  a(href='javascript:void(0)')
+                  a(href='javascript:void(0)' ng-click='editEvent(event)')
                     .row-content
-                      .least-content 13. nóv
+                      .least-content {{ event.nextReviewDate | date: 'MMM d' }}
                       h4.list-group-item-heading {{ event.title }}
                       p.list-group-item-text {{ event.courseName }}
                 .list-group-separator
