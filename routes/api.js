@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var pass = require('../config/pass');
 var User = require('../schemas/user');
+var Event = require('../schemas/event');
+
+//TODO: nota router.param('user') fyrir :user
 
 var getEvents = function (req, res, next) {
   var userRequestName = req.params.username;
@@ -27,6 +30,24 @@ var getUser = function (req, res, next) {
 }
 
 router.get('/username', pass.ensureAuthenticated, getUser);
+
+var updateEvent = function (req, res) {
+  console.log("Update event request received");
+  var userRequestName = req.params.username;
+  var loggedIn = req.user.username;
+  if (loggedIn != userRequestName || req.user._id != req.body.user_id) {
+    res.json({message:'Permission denied'});
+  }
+  var updatedEvent = req.body;
+  var eventId = req.params.id;
+  Event.update({_id: eventId}, updatedEvent, function (err) {
+    if (err) {
+      console.error("Event update failed", eventId);
+    }
+  })
+}
+
+router.put('/user/:username/events/:id', pass.ensureAuthenticated, updateEvent)
 
 
 module.exports = router;
