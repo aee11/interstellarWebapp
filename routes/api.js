@@ -40,7 +40,19 @@ var updateEvent = function (req, res) {
   }
   var updatedEvent = req.body;
   var eventId = req.params.id;
-  Event.update({_id: eventId}, updatedEvent, function (err) {
+  // Event.findById(eventId, function (err, event) {
+  //   if (err) {
+  //     console.error("Could not find event", eventId);
+  //   }
+
+  // });
+  Event.update({_id: eventId}, {
+    $set: {
+      title: updatedEvent.title,
+      courseName: updatedEvent.courseName,
+      glossaryLocation: updatedEvent.glossaryLocation
+    }
+  }, function (err) {
     if (err) {
       console.error("Event update failed", eventId);
     }

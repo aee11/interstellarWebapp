@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"conso",
+				"console.error(message);"
+			],
+			[
 				"cons",
 				"console.log(message);"
 			],
@@ -188,66 +192,42 @@
 	"buffers":
 	[
 		{
-			"file": "app.js",
+			"file": "public/javascripts/app.js",
 			"settings":
 			{
-				"buffer_size": 2714,
-				"line_ending": "Unix"
+				"buffer_size": 143,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "routes/api.js",
 			"settings":
 			{
-				"buffer_size": 683,
+				"buffer_size": 1503,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "routes/events.js",
+			"file": "public/directives/interstellarDirectives.js",
 			"settings":
 			{
-				"buffer_size": 2068,
+				"buffer_size": 372,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/controllers/interstellarController.js",
+			"file": "public/controllers/interstellarControllers.js",
 			"settings":
 			{
-				"buffer_size": 1986,
+				"buffer_size": 1704,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "views/myEvents.jade",
+			"file": "views/login.jade",
 			"settings":
 			{
-				"buffer_size": 2303,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/myEvents.js",
-			"settings":
-			{
-				"buffer_size": 323,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/javascripts/main.js",
-			"settings":
-			{
-				"buffer_size": 315,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/stylesheets/material.min.css",
-			"settings":
-			{
-				"buffer_size": 119953,
+				"buffer_size": 1013,
 				"line_ending": "Windows"
 			}
 		},
@@ -255,71 +235,50 @@
 			"file": "public/services/interstellarServices.js",
 			"settings":
 			{
-				"buffer_size": 209,
+				"buffer_size": 634,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/controllers/todoCtrl.js",
-			"settings":
-			{
-				"buffer_size": 2219,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "views/layout.jade",
 			"settings":
 			{
-				"buffer_size": 1919,
+				"buffer_size": 2543,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/login.jade",
-			"settings":
-			{
-				"buffer_size": 954,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/signup.js",
-			"settings":
-			{
-				"buffer_size": 1379,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/pass.js",
-			"settings":
-			{
-				"buffer_size": 1871,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/login.js",
-			"settings":
-			{
-				"buffer_size": 2173,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "routes/index.js",
 			"settings":
 			{
-				"buffer_size": 215,
+				"buffer_size": 227,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/events.jade",
+			"file": "views/index.jade",
 			"settings":
 			{
-				"buffer_size": 8182,
+				"buffer_size": 3243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 1750,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n  <title>Mad cuz bad?</title>\n  <link rel=\"stylesheet\" href=\"stylesheets/normalize.css\">\n  <link rel=\"stylesheet\" href=\"stylesheets/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"stylesheets/material-wfont.min.css\">\n  <link rel=\"stylesheet\" href=\"stylesheets/ripples.min.css\">\n  <link rel=\"stylesheet\" href=\"stylesheets/style.css\">\n  <script src=\"http://code.jquery.com/jquery-1.10.2.min.js\"></script>\n  <script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js\"></script>\n  <script src=\"../javascripts/material.min.js\"></script>\n  <script src=\"../javascripts/ripples.min.js\"></script>\n  <script src=\"../javascripts/main.js\"></script>\n\n</head>\n<body>\n<div class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-responsive-collapse\">\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a href=\"javascript:void(0)\" class=\"navbar-brand\" id=\"drawing\"> Logo </a>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"navbar-collapse-main\">\n      <ul class=\"nav navbar-nav\">\n		<li class=\"active\">\n		<a href=\"/\">Heim</a></li></ul> \n		<ul class=\"nav navbar-nav navbar-right\">\n		<li> <a href=\"/login\">Innskrá</a></li>\n		</ul>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</div>\n	<div id=\"home\" class=\"home\">\n  <div class=\"text-vcenter\">\n    <h1>Dreifðendurtekning!</h1>\n    <h3>Að læra hefur aldrei verið auðveldara</h3>\n    <!--<a href=\"#about\" class=\"btn btn-default btn-lg\">Um kerfið</a> -->\n  </div>\n</div>\n<!-- /first section -->\n\n\n<!-- second section - About -->\n<div id=\"about\" class=\"pad-section\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-6\">\n        <img src=\"images/graf2.jpg\" alt=\"\" />\n		<img src=\"images/graf.jpg\" alt=\"\" />\n      </div>\n      <div class=\"col-sm-6 text-center\">\n        <h2>Hvernig er best að læra nýja hluti?</h2>\n        <p class=\"lead\">Rannsóknir hafa í gegnum tíðina sýnt að eftir að við lærum eitthvað nýtt gleymum við því mjög hratt. Eftir sólahring munum við kannski innan helming af því sem við lærðum daginn áður. Eftir viku um 30 prósent og eftir mánuð ekki nema 25 prósent. Það sem dreifð endurtekning gerir er að koma í veg fyrir þetta og snúa þróuninni við.\n      </div>\n	  <div class=\"col-sm-6 text-center\">\n        <h2>Ein mynd segir meira en 1000 orð</h2>\n        <p class=\"lead\">En eins og þessi tvö gröf sýna okkur svart á hvítu þá virkar dreifðendurtekning svo einfalt er það.\n      </div>\n    </div>\n  </div>\n</div>\n<!-- /second section -->\n\n<!-- third section - Services -->\n<div id=\"services\" class=\"pad-section\">\n  <div class=\"container\">\n    <h2 class=\"text-center\">Hvernig þetta allt saman virkar</h2> <hr />\n    <div class=\"row text-center\">\n      <div class=\"col-sm-3 col-xs-6\">\n        <i class=\"glyphicon glyphicon-user\"> </i>\n        <h4>Búðu til aðgang</h4>\n        <p>Fyrst býrðu þér til aðgang á síðunni okkar og loggar þig inn</p>\n      </div>\n      <div class=\"col-sm-3 col-xs-6\">\n        <i class=\"glyphicon glyphicon-pencil\"> </i>\n        <h4>Settu inn glósurnar þínar</h4>\n        <p>Eftir að það er búið, þá skrifaru inn hvað þú glósaðir þann skóladaginn og upplýsingar hvar þú ert með glósurnar</p>\n      </div>\n      <div class=\"col-sm-3 col-xs-6\">\n        <i class=\"glyphicon glyphicon-calendar\"> </i>\n        <h4>Þú færð áminningar með ákveðnu millibili</h4>\n        <p>Kerfið okkar sendir þér síðan póst sem minnir þig á hvenær þú átt að rifja upp efnið</p>\n      </div>\n      <div class=\"col-sm-3 col-xs-6\">\n        <i class=\"glyphicon glyphicon-glass\"> </i>\n        <h4>Njóttu, betri námsárangur er rétt handan við hornið</h4>\n        <p>Nú er ekkert eftir nema að njóta! Svo eftir hverju bíðuru skráðu þig strax í dag</p>\n      </div>\n    </div>\n  </div>\n</div>\n<!-- /third section -->\n\n<!-- fourth section - Information -->\n<div id=\"information\" class=\"pad-section\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-6\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h2 class=\"panel-title\">Hvernig kerfið virkar</h2>\n          </div>\n          <div class=\"panel-body lead\">\n            Kerfið virkar þannig að sólahring eftir að þú lærir eitthvað nýtt þarft þú að rifja upp það sem þú varst að læra. Upprifjunin þarf ekki að taka langan tíma, kannski tvær mínútur, kannski 10, það fer bara eftir viðfangsefninu. Viku seinna þarftu svo aftur að kíkja aðeins aftur á þetta sama viðfangsefni. Og svo aftur mánuði seinna. Með því að rifja viðfangsefni upp með dreifðri endurtekningu hafa rannsóknir sýnt að nemendur muna að meðaltali 92 prósent af því sem þau lærðu 3 mánuðum seinna. Og það er akkúrat það sem við viljum þegar kemur að prófatörninni. \n          </div>\n        </div>\n      </div>\n      <div class=\"col-sm-6\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h2 class=\"panel-title\">Kerfið er fyrir alla!</h2>\n          </div>\n          <div class=\"panel-body lead\">\n            Við lögðum mikið uppúr því að gera kerfið sem einfaldast í notkun og allt viðmót sem skýrast. Jafnvel þótt þú kunnur bara að ræsa tölvuna þína sem þú greinilega kannt fyrst þú ert að skoða síðuna í þessum töluðu orðum þá ábyrgjumst við að þú getir notað kerfið sem við bjuggum til og jafnframt að það muni gagnast þér í því námi sem þú ert í á þessari stundu.\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!-- /fourth section -->\n\n<!-- fifth section -->\n\n<!-- footer -->\n<footer>\n  <hr />\n  <div class=\"container\">\n    <p class=\"text-right\">amazing</p>\n  </div>\n</footer>\n<!-- /footer -->\n\n  <!-- attach JavaScripts -->\n  <script src=\"js/jquery-1.10.2.js\"></script>\n  <script src=\"js/bootstrap.min.js\"></script>\n</body>\n</html>\n</body>\n</html>",
+			"file": "/C/Users/Alexander/AppData/Local/Temp/7zO190D.tmp/index.html",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 6241,
 				"line_ending": "Windows"
 			}
 		}
@@ -404,26 +363,51 @@
 		"/C/Users/Alexander/interstellar/config",
 		"/C/Users/Alexander/interstellar/public",
 		"/C/Users/Alexander/interstellar/public/controllers",
+		"/C/Users/Alexander/interstellar/public/directives",
 		"/C/Users/Alexander/interstellar/public/javascripts",
 		"/C/Users/Alexander/interstellar/public/services",
 		"/C/Users/Alexander/interstellar/public/stylesheets",
+		"/C/Users/Alexander/interstellar/public/views",
+		"/C/Users/Alexander/interstellar/routes",
 		"/C/Users/Alexander/interstellar/schemas",
 		"/C/Users/Alexander/interstellar/views"
 	],
 	"file_history":
 	[
+		"/C/Users/Alexander/interstellar/views/myEvents.jade",
+		"/C/Users/Alexander/interstellar/views/signup.jade",
+		"/C/Users/Alexander/interstellar/views/error.jade",
+		"/C/Users/Alexander/interstellar/routes/login.js",
+		"/C/Users/Alexander/Downloads/mixid/index.html",
+		"/C/Users/Alexander/AppData/Local/Temp/7zO3933.tmp/style.css",
+		"/C/Users/Alexander/interstellar/public/template/modal/window.html",
+		"/C/Users/Alexander/interstellar/public/template/modal/backdrop.html",
+		"/C/Users/Alexander/interstellar/template/modal/backdrop.html",
+		"/C/Users/Alexander/interstellar/public/controllers/interstellarControllers.js",
+		"/C/Users/Alexander/interstellar/routes/myEvents.js",
+		"/C/Users/Alexander/interstellar/app.js",
+		"/C/Users/Alexander/interstellar/routes/api.js",
+		"/C/Users/Alexander/interstellar/routes/events.js",
+		"/C/Users/Alexander/interstellar/public/controllers/interstellarController.js",
+		"/C/Users/Alexander/interstellar/public/directives/interstellarDirectives.js",
+		"/C/Users/Alexander/interstellar/public/services/interstellarServices.js",
+		"/C/Users/Alexander/interstellar/public/javascripts/main.js",
+		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/controllers/todoCtrl.js",
+		"/C/Users/Alexander/interstellar/views/layout.jade",
+		"/C/Users/Alexander/interstellar/views/login.jade",
+		"/C/Users/Alexander/interstellar/routes/signup.js",
+		"/C/Users/Alexander/interstellar/config/pass.js",
+		"/C/Users/Alexander/interstellar/routes/index.js",
+		"/C/Users/Alexander/interstellar/views/events.jade",
+		"/C/Users/Alexander/interstellar/bower_components/angular-resource/package.json",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/services/todoStorage.js",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/app.js",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/index.html",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/directives/todoFocus.js",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/directives/todoEscape.js",
-		"/C/Users/Alexander/interstellar/public/controllers/interstellarController.js",
 		"/C/Users/Alexander/interstellar/schemas/event.js",
-		"/C/Users/Alexander/interstellar/public/javascripts/main.js",
-		"/C/Users/Alexander/interstellar/views/events.jade",
 		"/C/Users/Alexander/interstellar/routes/logout.js",
 		"/C/Users/Alexander/interstellar/public/javascripts/ripples.min.js",
-		"/C/Users/Alexander/interstellar/views/error.jade",
 		"/C/Users/Alexander/interstellar/public/stylesheets/style.css",
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/package.json",
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/.bower.json",
@@ -438,16 +422,9 @@
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/dist/css/material.css",
 		"/C/Users/Alexander/AppData/Local/Temp/Temp1_dist.zip/dist/index.html",
 		"/C/Users/Alexander/Downloads/gislilokaverkefniveffi/dist/index.html",
-		"/C/Users/Alexander/interstellar/views/signup.jade",
-		"/C/Users/Alexander/interstellar/views/layout.jade",
 		"/C/Users/Alexander/interstellar/views/index.jade",
-		"/C/Users/Alexander/interstellar/routes/signup.js",
 		"/C/Users/Alexander/interstellar/schemas/user.js",
-		"/C/Users/Alexander/interstellar/routes/events.js",
 		"/C/Users/Alexander/interstellar/package.json",
-		"/C/Users/Alexander/interstellar/views/login.jade",
-		"/C/Users/Alexander/interstellar/routes/login.js",
-		"/C/Users/Alexander/interstellar/config/pass.js",
 		"/C/Users/Alexander/interstellar/schemas/db.js",
 		"/C/Users/Alexander/interstellar/modules/user.js",
 		"/C/Users/Alexander/interstellar/routes/users.js",
@@ -536,6 +513,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-sm-6",
+			"event",
+			"s",
+			"services",
 			"getevent",
 			"eventService",
 			"event",
@@ -602,37 +583,35 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.js",
+					"file": "public/javascripts/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2714,
+						"buffer_size": 143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1119,
-								1119
+								143,
+								143
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -641,76 +620,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 683,
+						"buffer_size": 1503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								0
+								1388,
+								1388
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "routes/events.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								508,
-								508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/controllers/interstellarController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								201,
-								201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -720,281 +645,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "views/myEvents.jade",
+					"buffer": 2,
+					"file": "public/directives/interstellarDirectives.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2303,
+						"buffer_size": 372,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2303,
-								2303
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 19.0,
-						"translation.y": 416.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "routes/myEvents.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								180,
-								180
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "public/javascripts/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "public/stylesheets/material.min.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 119953,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 531967.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "public/services/interstellarServices.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 209,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								202,
-								202
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/controllers/todoCtrl.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2219,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								239,
-								239
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 39.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "views/layout.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								326,
-								326
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 37.0,
-						"translation.y": -0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "views/login.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 954,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								134,
-								134
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "routes/signup.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1315,
-								1315
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "config/pass.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1871,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								689,
-								689
+								287,
+								287
 							]
 						],
 						"settings":
@@ -1011,50 +675,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "routes/login.js",
+					"buffer": 3,
+					"file": "public/controllers/interstellarControllers.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2173,
+						"buffer_size": 1704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1160,
-								1113
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "routes/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								189,
-								189
+								1185,
+								1185
 							]
 						],
 						"settings":
@@ -1062,33 +696,27 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 39.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 9,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 16,
-					"file": "views/events.jade",
+					"buffer": 4,
+					"file": "views/login.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8182,
+						"buffer_size": 1013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2767,
-								2767
+								1013,
+								1013
 							]
 						],
 						"settings":
@@ -1101,7 +729,189 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/services/interstellarServices.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								387,
+								387
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1917,
+								1917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "views/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1128,
+								1128
+							],
+							[
+								1297,
+								1297
+							],
+							[
+								1529,
+								1529
+							],
+							[
+								1746,
+								1746
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/stylesheets/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Alexander/AppData/Local/Temp/7zO190D.tmp/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4602,
+								4602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1124,18 +934,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1195,7 +998,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 268.0,
+	"side_bar_width": 278.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
