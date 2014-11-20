@@ -1,24 +1,25 @@
 extends layout
 
 block content
-  .row
-    .col-md-6.col-md-offset-3
-      .well
-        fieldset 
-          form.form-horizontal(action='/signup' method='post')
-            .form-group
-              label.col-lg-3.control-label(for='username') Notendanafn
-              .col-lg-9
-                input#username.form-control.input-lg(type='text' name='username' pattern='.{3,}' title='Lágmark 3 stafir' required)
-            .form-group
-              label.col-lg-3.control-label(for='email') Netfang
-              .col-lg-9
-                input#email.form-control.input-lg(type='email' name='email' required)
-            .form-group
-              label.col-lg-3.control-label(for='password') Lykilorð
-              .col-lg-9
-                input#password.form-control.input-lg(type='password' name='password' pattern='.{5,}' title='Lágmark 5 stafir' required)
-            .form-group
-              .col-lg-9.col-lg-offset-3
-                button.btn.btn-material-lightgreen(type='submit') Skrá mig
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .well
+          fieldset 
+            form.form-horizontal(action='/signup' method='post')
+              .form-group
+                label.col-lg-3.control-label(for='username') Notendanafn
+                .col-lg-9
+                  input#username.form-control.input-lg(type='text' name='username' pattern='.{3,}' title='Lágmark 3 stafir' required)
+              .form-group
+                label.col-lg-3.control-label(for='email') Netfang
+                .col-lg-9
+                  input#email.form-control.input-lg(type='email' name='email' required)
+              .form-group
+                label.col-lg-3.control-label(for='password') Lykilorð
+                .col-lg-9
+                  input#password.form-control.input-lg(type='password' name='password' pattern='.{5,}' title='Lágmark 5 stafir' required)
+              .form-group
+                .col-lg-9.col-lg-offset-3
+                  button.btn.btn-material-lightgreen(type='submit') Skrá mig
 

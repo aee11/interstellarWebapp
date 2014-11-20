@@ -1,77 +1,78 @@
 extends layout
 
 block content
-  main(ng-controller='EventListController')
-    script(type='text/ng-template' id='editEventModal.html')
-      .modal-header
-        button.close(type='button' data-dismiss='modal' aria-hidden='true' ng-click='cancel()') x
-        h4.modal-title Breyta atburð
-      .modal-body
-        form.form-horizontal
-          .form-group
-            label.col-lg-3.control-label(for='title') Titill
-            .col-lg-9
-              input#title.form-control.input-lg(type='text' name='title' ng-model='eventData.title' value='{{ eventData.title }}' required)
-          .form-group
-            label.col-lg-3.control-label(for='course') Áfangi
-            .col-lg-9
-              input#course.form-control.input-lg(type='text' ng-model='eventData.courseName' value='{{ eventData.courseName }}' name='course')
-          .form-group
-            label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
-            .col-lg-9
-              input#glosLocation.form-control.input-lg(type='text' ng-model='eventData.glossaryLocation' value='{{ eventData.glossaryLocation }}' name='glosLocation')
-          .form-group
-            .modal-footer
-              button.btn.btn-default(type='button' ng-click='cancel()') Loka
-              button.btn.btn-material-lightgreen(type='submit' ng-click='change()') Vista breytingar
-    .row
-      .col-md-12
-        .text-center
-          a#newEvent(href='events/add').btn.btn-success.btn-flat.btn
-            i.mdi-content-add 
-            span Bæta við atburð
-    .row
-      .col-md-12
-        .modal#eventModal.fade(role='dialog')
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button.close(type='button' data-dismiss='modal' aria-hidden='true') x
-                h4.modal-title Nýr atburður
-              .modal-body
-                form.form-horizontal(action='/events' method='post')
-                  .form-group
-                    label.col-lg-3.control-label(for='title') Titill
-                    .col-lg-9
-                      input#title.form-control.input-lg(type='text' name='title' required)
-                  .form-group
-                    label.col-lg-3.control-label(for='course') Áfangi
-                    .col-lg-9
-                      input#course.form-control.input-lg(type='text' name='course')
-                  .form-group
-                    label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
-                    .col-lg-9
-                      input#glosLocation.form-control.input-lg(type='text' name='glosLocation')
-                  .form-group
-                    .modal-footer
-                      button.btn.btn-default(type='button' data-dismiss='modal') Loka
-                      button.btn.btn-material-lightgreen(type='submit') Vista atburð
-    .row
-      .col-md-12
-        .panel.panel-default
-          .panel-body
-            .list-group
-              .singleEvent(ng-repeat='event in events' on-finish-render='loadMaterial()')
-                .list-group-item
-                  .row-action-primary.checkbox
-                    label
-                      input(type='checkbox')
-                  a(href='javascript:void(0)' ng-click='editEvent(event)')
-                    .row-content
-                      .least-content {{ event.nextReviewDate | date: 'MMM d' }}
-                      h4.list-group-item-heading {{ event.title }}
-                      p.list-group-item-text {{ event.courseName }}
-                .list-group-separator
-      //- li(ng-repeat='event in events')
-      //-   strong {{ event.title }}
-      //-   p {{ event.courseName }}
+  .container
+    main(ng-controller='EventListController')
+      script(type='text/ng-template' id='editEventModal.html')
+        .modal-header
+          button.close(type='button' data-dismiss='modal' aria-hidden='true' ng-click='cancel()') x
+          h4.modal-title Breyta atburð
+        .modal-body
+          form.form-horizontal
+            .form-group
+              label.col-lg-3.control-label(for='title') Titill
+              .col-lg-9
+                input#title.form-control.input-lg(type='text' name='title' ng-model='eventData.title' value='{{ eventData.title }}' required)
+            .form-group
+              label.col-lg-3.control-label(for='course') Áfangi
+              .col-lg-9
+                input#course.form-control.input-lg(type='text' ng-model='eventData.courseName' value='{{ eventData.courseName }}' name='course')
+            .form-group
+              label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
+              .col-lg-9
+                input#glosLocation.form-control.input-lg(type='text' ng-model='eventData.glossaryLocation' value='{{ eventData.glossaryLocation }}' name='glosLocation')
+            .form-group
+              .modal-footer
+                button.btn.btn-default(type='button' ng-click='cancel()') Loka
+                button.btn.btn-material-lightgreen(type='submit' ng-click='change()') Vista breytingar
+      .row
+        .col-md-12
+          .text-center
+            a#newEvent(href='events/add').btn.btn-success.btn-flat.btn
+              i.mdi-content-add 
+              span Bæta við atburð
+      .row
+        .col-md-12
+          .modal#eventModal.fade(role='dialog')
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type='button' data-dismiss='modal' aria-hidden='true') x
+                  h4.modal-title Nýr atburður
+                .modal-body
+                  form.form-horizontal(action='/events' method='post')
+                    .form-group
+                      label.col-lg-3.control-label(for='title') Titill
+                      .col-lg-9
+                        input#title.form-control.input-lg(type='text' name='title' required)
+                    .form-group
+                      label.col-lg-3.control-label(for='course') Áfangi
+                      .col-lg-9
+                        input#course.form-control.input-lg(type='text' name='course')
+                    .form-group
+                      label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
+                      .col-lg-9
+                        input#glosLocation.form-control.input-lg(type='text' name='glosLocation')
+                    .form-group
+                      .modal-footer
+                        button.btn.btn-default(type='button' data-dismiss='modal') Loka
+                        button.btn.btn-material-lightgreen(type='submit') Vista atburð
+      .row
+        .col-md-12
+          .panel.panel-default
+            .panel-body
+              .list-group
+                .singleEvent(ng-repeat='event in events' on-finish-render='loadMaterial()')
+                  .list-group-item
+                    .row-action-primary.checkbox
+                      label
+                        input(type='checkbox')
+                    a(href='javascript:void(0)' ng-click='editEvent(event)')
+                      .row-content
+                        .least-content {{ event.nextReviewDate | date: 'MMM d' }}
+                        h4.list-group-item-heading {{ event.title }}
+                        p.list-group-item-text {{ event.courseName }}
+                  .list-group-separator
+        //- li(ng-repeat='event in events')
+        //-   strong {{ event.title }}
+        //-   p {{ event.courseName }}

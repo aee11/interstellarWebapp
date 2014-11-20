@@ -20,22 +20,23 @@ html(ng-app='interstellarApp')
     script(src='services/interstellarServices.js')
     script(src='controllers/interstellarControllers.js')
     script(src='javascripts/app.js')
+    script(src='javascripts/svg.min.js')
     script(src='/javascripts/main.js')
   body
-    .navbar.navbar-material-lightgreen
+    .navbar.navbar-material-lightgreen(class=(title === 'Dreifð endurtekning' ? 'navbar-fixed-top' : ''))
       .navbar-header
         button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-responsive-collapse')
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand(href='javascript:void(0)') Logo
+        a.navbar-brand(href='javascript:void(0)') Interstellar
       .navbar-collapse.collapse.navbar-responsive-collapse
         ul.nav.navbar-nav
           li(class=(title === 'Express' ? 'active' : ''))
             a(href='/') Heim
           if locals.user
             li(class=(title === 'Mínir atburðir' ? 'active' : ''))
-              a(href='/events') Atburðir
+              a(href='/myEvents') Atburðir
         ul.nav.navbar-nav.navbar-right
           if locals.user
             li
@@ -45,5 +46,13 @@ html(ng-app='interstellarApp')
           else
             li 
               a(href='/login') Innskrá
-    .container
-      block content
+    //- script(type='text/javascript').
+    //-   var draw = SVG('logo').size(48,48);
+    //-   var logo = draw.image('images/logo.png', 48, 48);
+    //-   logo.mouseover(function() {
+    //-     this.pause()
+    //-   })
+    //-   logo.animate({ease: '-', duration: 30000}).rotate(360).loop();
+
+
+    block content
