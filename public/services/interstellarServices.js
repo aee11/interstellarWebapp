@@ -4,7 +4,9 @@ interstellarServices.factory('Events', ['$resource',
   function ($resource) {
     var eventApi = $resource('api/user/:userId/events/:eventId', {}, {
       query: {method: 'GET', params: {userId: '@id', eventId: ''}, isArray: true},
-      update: {method: 'PUT', params: {userId: 'userId', eventId: '@_id'}}
+      update: {method: 'PUT', params: {userId: 'userId', eventId: '@_id'}},
+      save: {method: 'POST', params: {userId: 'userId', eventId: ''}},
+      remove: {method: 'DELETE', params: {userId: 'userId', eventId: '@_id'}}
     });
 
     function markDueEvents (events) {
@@ -17,9 +19,20 @@ interstellarServices.factory('Events', ['$resource',
       
       return true;
     }
+
+    function arrayObjectIndexOf(arr, obj){
+      for(var i = 0; i < arr.length; i++){
+        if(angular.equals(arr[i], obj)){
+          return i;
+        }
+      };
+      return -1;
+    }
+
     return {
       eventApi: eventApi,
-      markDueEvents: markDueEvents
+      markDueEvents: markDueEvents,
+      arrayObjectIndexOf: arrayObjectIndexOf
     }
   }
 ]);

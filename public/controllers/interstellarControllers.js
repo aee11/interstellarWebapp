@@ -6,12 +6,38 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
       $scope.events = Events.eventApi.query({userId: user.username});
       Events.markDueEvents($scope.events);
     });
-    
+    $scope.addEvent = function () {
+      var addEventModal = $modal.open({
+        templateUrl: 'template/addEventForm.html',
+        controller: 'AddEventModalController',
+        resolve: {
+          eventData: function () {
+            return true;
+          }
+        }
+      });
+
+      addEventModal.opened.then(function () {
+        setTimeout(function () { //loadum material input design
+          $.material.input();
+        }, 500);
+      });
+
+      addEventModal.result.then(function (eventData) {
+        Events.eventApi.save({userId: $scope.user.username}, eventData, function (newEvent) {
+          $scope.events.push(newEvent);
+        }, function (err) {
+          console.error("Event failed to save");
+        });
+      });
+
+    };
+
     $scope.editEvent = function (eventData) {
       //console.log(eventData);
       var eventModal = $modal.open({
-        templateUrl: 'editEventModal.html',
-        controller: 'EventModalController',
+        templateUrl: 'template/eventEditForm.html',
+        controller: 'EditEventModalController',
         resolve: {
           eventData: function () {
             return eventData;
@@ -26,19 +52,45 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
       });
 
       eventModal.result.then(function (eventData) {
-        Events.eventApi.update({userId: $scope.user.username}, eventData, function() {
+        Events.eventApi.update({userId: $scope.user.username}, eventData, function (res) {
           console.log("Updated event");
+        }, function (err) {
+          //console.log(err);
         });
-        console.log("Modal dismissed", eventData);
+      }, function (reason) {
+        if (reason == 'delete') {
+          Events.eventApi.remove({userId: $scope.user.username, eventId: eventData._id},
+            function (res) {
+              var indexToDelete = Events.arrayObjectIndexOf($scope.events, eventData);
+              $scope.events.splice(indexToDelete, 1)
+            }
+          );
+        }
       });
     }
+
     $scope.loadMaterial = function () {
       $.material.checkbox();
     }
+
   }
 ]);
 
-interstellarControllers.controller('EventModalController', 
+interstellarControllers.controller('AddEventModalController', 
+  function ($scope, $modalInstance) {
+    $scope.eventData = {};
+
+    $scope.add = function () {
+      $modalInstance.close($scope.eventData);
+    };
+
+    $scope.cancel = function () {
+      console.log("Modal canceled");
+      $modalInstance.dismiss('cancel');
+    };
+});
+
+interstellarControllers.controller('EditEventModalController', 
   function ($scope, $modalInstance, eventData) {
     $scope.originalEventData = {};
     $scope.eventData = eventData;
@@ -52,4 +104,8 @@ interstellarControllers.controller('EventModalController',
       angular.copy($scope.originalEventData, $scope.eventData);
       $modalInstance.dismiss('cancel');
     };
+
+    $scope.delete = function () {
+      $modalInstance.dismiss('delete');
+    }
 });

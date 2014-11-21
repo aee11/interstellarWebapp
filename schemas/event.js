@@ -1,6 +1,7 @@
 // Module for SR event
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+    Schema = mongoose.Schema,
+    User = require('./user');
 
 var eventSchema = new Schema({
   user_id: { type: Schema.Types.ObjectId, ref: 'user' }, // userId eigandan atburðs

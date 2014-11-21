@@ -27,6 +27,14 @@ gulp.task('watch', function() {
   });
 });
 
+gulp.task('ngTemplate', function() {
+  gulp.src('./partials/*.jade')
+    .pipe(plugins.jade({
+      locals: {}
+    }))
+    .pipe(gulp.dest('./public/template/'))
+});
+
 // gulp.task('scripts', function() {
 //   return gulp.src('bower_components/bootstrap-material-design/dist/js/*.min.js')
 //     .pipe(concat('main.js'))
@@ -34,4 +42,5 @@ gulp.task('watch', function() {
 // });
 
 gulp.task('bower', ['bowerjs', 'bowercss'])
-gulp.task('default', ['bower'])
+gulp.task('angular', ['ngTemplate'])
+gulp.task('default', ['bower', 'angular'])
