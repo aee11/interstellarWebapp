@@ -7,8 +7,19 @@ interstellarServices.factory('Events', ['$resource',
       update: {method: 'PUT', params: {userId: 'userId', eventId: '@_id'}}
     });
 
+    function markDueEvents (events) {
+      events.$promise.then(function(eventData) {
+        angular.forEach(eventData, function (value, key) {
+          var eventDate = new Date(eventData.nextReviewDate).toDateString();
+          var today = new Date('YYYY-dd');
+        });
+      })
+      
+      return true;
+    }
     return {
-      eventApi: eventApi
+      eventApi: eventApi,
+      markDueEvents: markDueEvents
     }
   }
 ]);

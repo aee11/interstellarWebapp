@@ -7,14 +7,35 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #addEventFab {
+    display: initial !important;
+  }
+}
+
 .list-group-item a {
   color: #000;
 }
 
-#logo {
+h5.eventGroup {
+  margin-left: 2em;
+}
+
+#addEventFab {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  right: 1.5em;
+  bottom: 1.5em;
+}
+
+
+
+/*#logo {
   padding-top: 1px;
   padding-left: 26px;
-}
+}*/
 
 /* general styles */
 html, body {

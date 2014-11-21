@@ -4,6 +4,7 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
   function ($scope, User, Events, $modal) {
     $scope.user = User.query(function (user) {
       $scope.events = Events.eventApi.query({userId: user.username});
+      Events.markDueEvents($scope.events);
     });
     
     $scope.editEvent = function (eventData) {
