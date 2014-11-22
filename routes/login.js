@@ -5,11 +5,12 @@ var LocalStrategy = require('passport-local').Strategy;
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', function (req, res) {
   if (req.user != null) {
-    res.redirect('/');
+    return res.redirect('/');
   }
-  res.render('login', { title: 'Login' });
+  console.log("Displaying login");
+  res.render('login', { title: 'Innskráning' });
 });
 
 // passport.use(new LocalStrategy(

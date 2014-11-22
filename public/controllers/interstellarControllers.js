@@ -20,6 +20,7 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
       addEventModal.opened.then(function () {
         setTimeout(function () { //loadum material input design
           $.material.input();
+          $.material.ripples();
         }, 500);
       });
 
@@ -48,6 +49,7 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
       eventModal.opened.then(function () {
         setTimeout(function () { //loadum material input design
           $.material.input();
+          $.material.ripples();
         }, 500);
       });
 

@@ -13,7 +13,7 @@ var getEvents = function (req, res, next) {
   var loggedIn = req.user.username;
   console.log(req.user);
   if (loggedIn != userRequestName) {
-    res.status(401).send('Permission denied');
+    res.status(401).end('Permission denied');
   } else {
     User.find({ _id: req.user._id }).populate('events').lean().exec(function (err, user) {
       if (err) {
@@ -37,7 +37,7 @@ var updateEvent = function (req, res) {
   var userRequestName = req.params.username;
   var loggedIn = req.user.username;
   if (loggedIn != userRequestName || req.user._id != req.body.user_id) {
-    res.status(401).send('Permission denied');
+    return res.status(401).send('Permission denied');
   }
   var updatedEvent = req.body;
   var eventId = req.params.id;
@@ -63,7 +63,7 @@ var addEvent = function (req, res) {
   var userRequestName = req.params.username;
   var loggedIn = req.user.username;
   if (loggedIn != userRequestName) {
-    res.status(401).send('Permission denied');
+    return res.status(401).end('Permission denied');
   }
   var currentDate = new Date();
   var nextReviewDate = moment(currentDate).add(7, 'days').toDate();
@@ -79,7 +79,7 @@ var addEvent = function (req, res) {
   console.log(newEvent);
   newEvent.save(function (err, event) {
     if (err) {
-      res.render('error', {
+      return res.render('error', {
         error: 'Ekki tókst að vista atburðinn í gagnagrunni',
         message: ''
       });
@@ -87,7 +87,7 @@ var addEvent = function (req, res) {
       console.log("Atburður skráður: ", newEvent._id);
       User.findByIdAndUpdate(req.user._id, { $push: { events: newEvent._id } }, function (err) {
         if (err) {
-          res.render('error', {
+          return res.render('error', {
             error: 'Ekki tókst að vista atburðinn í gagnagrunni',
             message: ''
           });
@@ -104,20 +104,20 @@ var deleteEvent = function (req, res, next) {
   var userRequestName = req.params.username;
   var loggedIn = req.user.username;
   if (loggedIn != userRequestName) {
-    res.status(401).send('Permission denied');
+    return res.status(401).send('Permission denied');
   }
   Event.remove({_id: req.params.eventId, user_id: req.user._id}, function (err) {
     console.log("Removed event");
     if (err) {
-      res.status(500).end();
+      return res.status(500).end();
     }
     User.update({_id: req.user._id}, {$pull: {events: req.params.eventId}}, function (err) {
       if (err) {
         console.log("Failed to remove from user");
-        res.status(500).end();
+        return res.status(500).end();
       }
-        console.log("Event removed from user");
-        res.status(200).end()
+      console.log("Event removed from user");
+      res.status(200).end();
     });
   });
 }

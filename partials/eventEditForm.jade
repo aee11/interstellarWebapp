@@ -1,22 +1,21 @@
-form(name='editForm')
+form(name='editForm').form-horizontal
   .modal-header
     button.close(type='button' data-dismiss='modal' aria-hidden='true' ng-click='cancel()') x
     h4.modal-title Breyta atburð
   .modal-body
-    form.form-horizontal
-      .form-group
-        label.col-lg-3.control-label(for='title') Titill
-        .col-lg-9
-          input#title.form-control.input-lg(type='text' name='title' ng-model='eventData.title' value='{{ eventData.title }}' required)
-      .form-group
-        label.col-lg-3.control-label(for='course') Áfangi
-        .col-lg-9
-          input#course.form-control.input-lg(type='text' ng-model='eventData.courseName' value='{{ eventData.courseName }}' name='course')
-      .form-group
-        label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
-        .col-lg-9
-          input#glosLocation.form-control.input-lg(type='text' ng-model='eventData.glossaryLocation' value='{{ eventData.glossaryLocation }}' name='glosLocation')
-      .form-group
-        .modal-footer
-          button.btn.btn-warning(type='button' ng-click='delete()') Eyða
-          button.btn.btn-material-lightgreen(type='submit' ng-click='editForm.$valid && change()') Vista breytingar
+    .form-group
+      label.col-lg-3.control-label(for='title') Titill
+      .col-lg-9
+        input#title.form-control.input-lg(type='text' name='title' ng-model='eventData.title' value='{{ eventData.title }}' required)
+    .form-group
+      label.col-lg-3.control-label(for='course') Áfangi
+      .col-lg-9
+        input#course.form-control.input-lg(type='text' ng-model='eventData.courseName' value='{{ eventData.courseName }}' name='course')
+    .form-group
+      label.col-lg-3.control-label(for='glosLocation') Hvar finn ég glósurnar?
+      .col-lg-9
+        input#glosLocation.form-control.input-lg(type='text' ng-model='eventData.glossaryLocation' value='{{ eventData.glossaryLocation }}' name='glosLocation')
+  .modal-footer
+    .form-group
+      button.btn.btn-warning(type='button' ng-click='delete()') Eyða
+      button.modal-submit.btn.btn-material-lightgreen(type='submit' ng-click='editForm.$valid && change()' withripple) Vista breytingar
