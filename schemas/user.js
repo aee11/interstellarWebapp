@@ -14,8 +14,6 @@ var userSchema = new Schema({
 //bcrypt middleware
 userSchema.pre('save', function (next) {
   var user = this;
-  // TODO: bcrypt
-  // see: https://github.com/jaredhanson/passport-local/blob/master/examples/express3-mongoose/app.js
   bcrypt.genSalt(SALT_WORK_FACTOR, function (err, salt) {
     if (err) {
       return next(err);

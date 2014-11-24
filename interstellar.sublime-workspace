@@ -4,12 +4,24 @@
 		"selected_items":
 		[
 			[
-				"btn-",
-				"btn-material-lightgreen"
+				"data",
+				"data-original-title"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"back",
+				"background-color"
 			],
 			[
 				"margin",
-				"margin-left"
+				"margin-right"
+			],
+			[
+				"btn-",
+				"btn-material-lightgreen"
 			],
 			[
 				"conso",
@@ -196,26 +208,10 @@
 	"buffers":
 	[
 		{
-			"file": "routes/api.js",
-			"settings":
-			{
-				"buffer_size": 1791,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/javascripts/app.js",
-			"settings":
-			{
-				"buffer_size": 259,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "public/controllers/interstellarControllers.js",
 			"settings":
 			{
-				"buffer_size": 1785,
+				"buffer_size": 4172,
 				"line_ending": "Windows"
 			}
 		},
@@ -223,15 +219,15 @@
 			"file": "public/services/interstellarServices.js",
 			"settings":
 			{
-				"buffer_size": 989,
+				"buffer_size": 1795,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "views/login.jade",
+			"file": "public/javascripts/app.js",
 			"settings":
 			{
-				"buffer_size": 1013,
+				"buffer_size": 287,
 				"line_ending": "Windows"
 			}
 		},
@@ -239,7 +235,7 @@
 			"file": "views/layout.jade",
 			"settings":
 			{
-				"buffer_size": 2772,
+				"buffer_size": 2900,
 				"line_ending": "Unix"
 			}
 		},
@@ -247,55 +243,47 @@
 			"file": "views/myEvents.jade",
 			"settings":
 			{
-				"buffer_size": 4013,
+				"buffer_size": 1586,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 866,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/events.jade",
-			"settings":
-			{
-				"buffer_size": 8182,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/javascripts/locales/is.js",
-			"settings":
-			{
-				"buffer_size": 4729,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/index.js",
-			"settings":
-			{
-				"buffer_size": 227,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/index.jade",
-			"settings":
-			{
-				"buffer_size": 3243,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "public/stylesheets/style.css",
 			"settings":
 			{
-				"buffer_size": 1997,
+				"buffer_size": 3655,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "routes/api.js",
+			"settings":
+			{
+				"buffer_size": 4529,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "schemas/user.js",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "schemas/event.js",
+			"settings":
+			{
+				"buffer_size": 1607,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "routes/signup.js",
+			"settings":
+			{
+				"buffer_size": 1381,
 				"line_ending": "Windows"
 			}
 		}
@@ -377,49 +365,56 @@
 	"expanded_folders":
 	[
 		"/C/Users/Alexander/interstellar",
+		"/C/Users/Alexander/interstellar/_tmp",
 		"/C/Users/Alexander/interstellar/config",
+		"/C/Users/Alexander/interstellar/partials",
 		"/C/Users/Alexander/interstellar/public",
 		"/C/Users/Alexander/interstellar/public/controllers",
-		"/C/Users/Alexander/interstellar/public/directives",
 		"/C/Users/Alexander/interstellar/public/javascripts",
-		"/C/Users/Alexander/interstellar/public/javascripts/locales",
-		"/C/Users/Alexander/interstellar/public/services",
-		"/C/Users/Alexander/interstellar/public/stylesheets",
-		"/C/Users/Alexander/interstellar/public/views",
 		"/C/Users/Alexander/interstellar/routes",
 		"/C/Users/Alexander/interstellar/schemas",
 		"/C/Users/Alexander/interstellar/views"
 	],
 	"file_history":
 	[
+		"/C/Users/Alexander/interstellar/views/layout.jade",
+		"/C/Users/Alexander/interstellar/public/javascripts/app.js",
+		"/C/Users/Alexander/interstellar/routes/api.js",
+		"/C/Users/Alexander/interstellar/routes/login.js",
+		"/C/Users/Alexander/interstellar/schemas/event.js",
+		"/C/Users/Alexander/interstellar/package.json",
+		"/C/Users/Alexander/interstellar/schemas/user.js",
+		"/C/Users/Alexander/interstellar/views/myEvents.jade",
+		"/C/Users/Alexander/interstellar/routes/events.js",
+		"/C/Users/Alexander/interstellar/gulpfile.js",
+		"/C/Users/Alexander/interstellar/partials/addEventForm.jade",
+		"/C/Users/Alexander/interstellar/partials/eventEditForm.jade",
+		"/C/Users/Alexander/interstellar/public/controllers/interstellarControllers.js",
+		"/C/Users/Alexander/interstellar/public/services/interstellarServices.js",
+		"/C/Users/Alexander/interstellar/app.js",
+		"/C/Users/Alexander/interstellar/public/stylesheets/style.css",
+		"/C/Users/Alexander/interstellar/public/template/eventEditForm.html",
+		"/C/Users/Alexander/interstellar/views/index.jade",
+		"/C/Users/Alexander/interstellar/routes/index.js",
+		"/C/Users/Alexander/interstellar/public/javascripts/locales/is.js",
+		"/C/Users/Alexander/interstellar/views/login.jade",
 		"/C/Users/Alexander/interstellar/bower_components/moment/moment.js",
 		"/C/Users/Alexander/interstellar/bower_components/moment/locale/is.js",
-		"/C/Users/Alexander/interstellar/public/javascripts/app.js",
 		"/C/Users/Alexander/interstellar/public/directives/interstellarDirectives.js",
 		"/C/Users/Alexander/AppData/Local/Temp/7zO190D.tmp/index.html",
-		"/C/Users/Alexander/interstellar/app.js",
-		"/C/Users/Alexander/interstellar/views/myEvents.jade",
 		"/C/Users/Alexander/interstellar/views/signup.jade",
 		"/C/Users/Alexander/interstellar/views/error.jade",
-		"/C/Users/Alexander/interstellar/routes/login.js",
 		"/C/Users/Alexander/Downloads/mixid/index.html",
 		"/C/Users/Alexander/AppData/Local/Temp/7zO3933.tmp/style.css",
 		"/C/Users/Alexander/interstellar/public/template/modal/window.html",
 		"/C/Users/Alexander/interstellar/public/template/modal/backdrop.html",
 		"/C/Users/Alexander/interstellar/template/modal/backdrop.html",
-		"/C/Users/Alexander/interstellar/public/controllers/interstellarControllers.js",
 		"/C/Users/Alexander/interstellar/routes/myEvents.js",
-		"/C/Users/Alexander/interstellar/routes/api.js",
-		"/C/Users/Alexander/interstellar/routes/events.js",
 		"/C/Users/Alexander/interstellar/public/controllers/interstellarController.js",
-		"/C/Users/Alexander/interstellar/public/services/interstellarServices.js",
 		"/C/Users/Alexander/interstellar/public/javascripts/main.js",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/controllers/todoCtrl.js",
-		"/C/Users/Alexander/interstellar/views/layout.jade",
-		"/C/Users/Alexander/interstellar/views/login.jade",
 		"/C/Users/Alexander/interstellar/routes/signup.js",
 		"/C/Users/Alexander/interstellar/config/pass.js",
-		"/C/Users/Alexander/interstellar/routes/index.js",
 		"/C/Users/Alexander/interstellar/views/events.jade",
 		"/C/Users/Alexander/interstellar/bower_components/angular-resource/package.json",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/services/todoStorage.js",
@@ -427,15 +422,12 @@
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/index.html",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/directives/todoFocus.js",
 		"/C/Users/Alexander/Downloads/tastejs-todomvc-1.3.0-0-g935aed0/tastejs-todomvc-1e00523/architecture-examples/angularjs/js/directives/todoEscape.js",
-		"/C/Users/Alexander/interstellar/schemas/event.js",
 		"/C/Users/Alexander/interstellar/routes/logout.js",
 		"/C/Users/Alexander/interstellar/public/javascripts/ripples.min.js",
-		"/C/Users/Alexander/interstellar/public/stylesheets/style.css",
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/package.json",
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/.bower.json",
 		"/C/Users/Alexander/interstellar/bower_components/angularjs/bower.json",
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/bower.json",
-		"/C/Users/Alexander/interstellar/gulpfile.js",
 		"/C/Users/Alexander/interstellar/bower_components/angularjs/README.md",
 		"/C/Users/Alexander/interstellar/bower_components/angularjs/.bower.json",
 		"/C/Users/Alexander/interstellar/bower_components/jquery/.bower.json",
@@ -444,9 +436,6 @@
 		"/C/Users/Alexander/interstellar/bower_components/bootstrap-material-design/dist/css/material.css",
 		"/C/Users/Alexander/AppData/Local/Temp/Temp1_dist.zip/dist/index.html",
 		"/C/Users/Alexander/Downloads/gislilokaverkefniveffi/dist/index.html",
-		"/C/Users/Alexander/interstellar/views/index.jade",
-		"/C/Users/Alexander/interstellar/schemas/user.js",
-		"/C/Users/Alexander/interstellar/package.json",
 		"/C/Users/Alexander/interstellar/schemas/db.js",
 		"/C/Users/Alexander/interstellar/modules/user.js",
 		"/C/Users/Alexander/interstellar/routes/users.js",
@@ -515,9 +504,7 @@
 		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/default.css",
 		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/jquery.js",
 		"/C/Users/Alexander/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/script.js",
-		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/index.html",
-		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Vefforritun/Verkefni/Verkefni 1/index.html"
+		"/C/Users/Alexander/OneDrive/Háskóli Íslands/3. önn/Formleg mál og reiknanleiki/AutomataLatexGenerator/script.js"
 	],
 	"find":
 	{
@@ -535,6 +522,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"updatedReviewDate",
+			"nextReviewDate",
+			"event",
+			"repeated-item",
+			".animate",
+			"value",
+			"markDueEvents",
+			"savedEvent",
+			"EventModalCo",
+			"EventMod",
+			"change",
+			"editForm",
 			"ur",
 			"due",
 			"Todays",
@@ -609,24 +608,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/api.js",
+					"file": "public/controllers/interstellarControllers.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1791,
+						"buffer_size": 4172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1580,
-								1580
+								1088,
+								1088
 							]
 						],
 						"settings":
@@ -639,80 +638,54 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/javascripts/app.js",
+					"file": "public/services/interstellarServices.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 259,
+						"buffer_size": 1795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								1141,
+								1141
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "public/controllers/interstellarControllers.js",
+					"file": "public/javascripts/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1785,
+						"buffer_size": 287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								437,
-								437
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/services/interstellarServices.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 989,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								666,
-								666
+								283,
+								283
 							]
 						],
 						"settings":
@@ -727,20 +700,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "views/login.jade",
+					"buffer": 3,
+					"file": "views/layout.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1013,
+						"buffer_size": 2900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1013,
-								1013
+								2403,
+								2403
 							]
 						],
 						"settings":
@@ -753,57 +726,149 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "views/layout.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2772,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1231,
-								1231
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "views/myEvents.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4013,
+						"buffer_size": 1586,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								655,
-								655
+								1586,
+								1586
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/stylesheets/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "routes/api.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4375,
+								4375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "schemas/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "schemas/event.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1433,
+								1433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -815,175 +880,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "package.json",
+					"buffer": 9,
+					"file": "routes/signup.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 866,
+						"buffer_size": 1381,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								1311,
+								1311
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "views/events.jade",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 8182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1719,
-								1719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 2.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "public/javascripts/locales/is.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4729,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3743,
-								3743
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 1048.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "routes/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 227,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								175,
-								175
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "views/index.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								202,
-								202
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 39.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "public/stylesheets/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1997,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1070,7 +993,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 278.0,
+	"side_bar_width": 242.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

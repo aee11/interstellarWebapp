@@ -17,11 +17,13 @@ block content
             .panel-body
               .list-group
                 h3.text-center(ng-show='!events.length') Engir atburðir skráðir
-                .singleEvent(ng-repeat='event in events' on-finish-render='loadMaterial()')
+                .singleEvent(ng-repeat='event in events | orderBy: "nextReviewDateObj"' on-finish-render='loadMaterial()')
                   .list-group-item
-                    .row-action-primary.checkbox
+                    .row-action-primary.checkbox(ng-if='event.isDue')
                       label
-                        input(type='checkbox')
+                        input(type='checkbox' ng-model='event.checked' ng-click='eventDone(event)')
+                    .row-action-primary(ng-if='!event.isDue')
+                      i.mdi-content-block
                     a(href='javascript:void(0)' ng-click='editEvent(event)')
                       .row-content
                         .least-content {{ event.nextReviewDate | amCalendar }}

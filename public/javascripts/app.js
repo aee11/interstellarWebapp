@@ -1,5 +1,6 @@
 var interstellarApp = angular.module('interstellarApp', [
   'ngTouch',
+  'ngAnimate',
   'angular.filter',
   'angularMoment',
   'interstellarServices',

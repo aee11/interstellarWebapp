@@ -46,7 +46,7 @@ router.post('/', function (req,res) {
         if (err) {
           console.log("Gat ekki skráð inn eftir nýskráningu");
         } else {
-          res.redirect('/events');
+          res.redirect('/myEvents');
         }
       });
     }

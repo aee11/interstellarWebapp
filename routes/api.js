@@ -124,6 +124,29 @@ var deleteEvent = function (req, res, next) {
 
 router.delete('/user/:username/events/:eventId', pass.ensureAuthenticated, deleteEvent);
 
+var updateReviewDate = function (req, res, next) {
+  var userRequestName = req.params.username;
+  var loggedIn = req.user.username;
+  if (loggedIn != userRequestName) {
+    return res.status(401).send('Permission denied');
+  }
+
+  Event.findOne({_id: req.params.eventId, user_id: req.user._id}, function (err, singleEvent) {
+    if (err) {
+      return res.status(500).end();
+    }
+    singleEvent.updateReviewDate(function (err, updatedReviewDate) {
+      if (err) {
+        console.log(err);
+        return res.status(500).end();
+      }
+      res.status(200).json({updatedReviewDate: updatedReviewDate});
+    })
+  })
+}
+
+router.put('/user/:username/events/:eventId/updateReviewDate', pass.ensureAuthenticated, updateReviewDate);
+
 
 
 module.exports = router;
