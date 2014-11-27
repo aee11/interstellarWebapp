@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .container
+  .container.event-container
     main(ng-controller='EventListController')
       .row
         .col-md-12
@@ -9,12 +9,12 @@ block content
             a(href='javascript:void(0)' ng-click='addEvent()').btn.btn-success.btn-flat.btn
               i.mdi-content-add 
               span Bæta við atburð
-      #addEventFab
+      #addEventFab.onlyForSmall(ng-show='!isModalOpen')
         a(href='javascript:void(0)' ng-click='addEvent()').btn.btn-material-lightgreen.btn-fab.btn-raised.mdi-content-add
       .row
         .col-md-12
-          .panel.panel-default
-            .panel-body
+          .panel.panel-default.panel-event
+            .panel-body.panel-body-event
               .list-group
                 h3.text-center(ng-show='!events.length') Engir atburðir skráðir
                 .singleEvent(ng-repeat='event in events | orderBy: "nextReviewDateObj"' on-finish-render='loadMaterial()')
@@ -29,7 +29,7 @@ block content
                         .least-content {{ event.nextReviewDate | amCalendar }}
                         h4.list-group-item-heading {{ event.title }}
                         p.list-group-item-text {{ event.courseName }}
-                  .list-group-separator
+                  .list-group-separator(ng-if='!$last')
         //- li(ng-repeat='event in events')
         //-   strong {{ event.title }}
         //-   p {{ event.courseName }}

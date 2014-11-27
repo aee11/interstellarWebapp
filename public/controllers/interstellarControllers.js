@@ -3,6 +3,8 @@ var interstellarControllers = angular.module('interstellarControllers', ['ui.boo
 interstellarControllers.controller('EventListController', ['$scope', 'User', 'Events', '$modal', 
   function ($scope, User, Events, $modal) {
     $scope.now = moment();
+    $scope.isModalOpen = false;
+
     $scope.user = User.query(function (user) {
       $scope.events = Events.eventApi.query({userId: user.username});
       Events.markIfDue($scope.events);
@@ -29,6 +31,7 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
     }
 
     $scope.addEvent = function () {
+      $scope.isModalOpen = true;
       var addEventModal = $modal.open({
         templateUrl: 'template/addEventForm.html',
         controller: 'AddEventModalController',
@@ -42,11 +45,17 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
       addEventModal.opened.then(function () {
         setTimeout(function () { //loadum material input design
           $.material.input();
-          $.material.ripples();
         }, 500);
       });
 
+      addEventModal.result.finally(function () {
+        console.log($scope.isModalOpen);
+        $scope.isModalOpen = false;
+        console.log($scope.isModalOpen);
+      })
+
       addEventModal.result.then(function (eventData) {
+        console.log("add event closed");
         Events.eventApi.save({userId: $scope.user.username}, eventData, function (newEvent) {
           $scope.events.push(newEvent);
         }, function (err) {
@@ -56,7 +65,7 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
     };
 
     $scope.editEvent = function (eventData) {
-      //console.log(eventData);
+      $scope.isModalOpen = true;
       var eventModal = $modal.open({
         templateUrl: 'template/eventEditForm.html',
         controller: 'EditEventModalController',
@@ -73,6 +82,10 @@ interstellarControllers.controller('EventListController', ['$scope', 'User', 'Ev
           $.material.ripples();
         }, 500);
       });
+
+      eventModal.result.finally(function () {
+        $scope.isModalOpen = false;
+      })
 
       eventModal.result.then(function (eventData) {
         Events.eventApi.update({userId: $scope.user.username}, eventData, function (res) {

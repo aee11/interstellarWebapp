@@ -98,7 +98,7 @@
             nextDay : '[á morgun]',
             nextWeek : 'dddd',
             lastDay : '[í gær]',
-            lastWeek : '[síðasta] dddd',
+            lastWeek : '[síðasti] dddd',
             sameElse : 'll'
         },
         // Default:
