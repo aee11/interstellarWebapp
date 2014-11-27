@@ -20,19 +20,19 @@ eventSchema.methods.updateReviewDate = function (callback) {
   var updatedReviewDate = moment(this.nextReviewDate);
   switch (incReviewCount) {
     case 1:
-      updatedReviewDate.add(1, 'weeks');
-      break;
-    case 2:
       updatedReviewDate.add(1, 'months');
       break;
-    case 3:
+    case 2:
       updatedReviewDate.add(2, 'months');
       break;
-    case 4:
+    case 3:
       updatedReviewDate.add(3, 'months');
       break;
-    case 5:
+    case 4:
       updatedReviewDate.add(6, 'months');
+      break;
+    case 5:
+      updatedReviewDate.add(8, 'months');
       break;
     default:
       updatedReviewDate.add(1, 'years');
