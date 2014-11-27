@@ -3,7 +3,7 @@ extends layout
 block content
   .container.event-container
     main(ng-controller='EventListController')
-      .row
+      .row.event-row
         .col-md-12
           .text-center
             a(href='javascript:void(0)' ng-click='addEvent()').btn.btn-success.btn-flat.btn
@@ -11,8 +11,8 @@ block content
               span Bæta við atburð
       #addEventFab.onlyForSmall(ng-show='!isModalOpen')
         a(href='javascript:void(0)' ng-click='addEvent()').btn.btn-material-lightgreen.btn-fab.btn-raised.mdi-content-add
-      .row
-        .col-md-12
+      .row.event-row
+        .col-md-12.event-col
           .panel.panel-default.panel-event
             .panel-body.panel-body-event
               .list-group

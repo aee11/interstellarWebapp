@@ -44,6 +44,12 @@
   .list-group .list-group-item {
     padding: 0px !important;
   }
+  .event-row {
+    margin-right: 0px;
+  }
+  .event-col {
+    padding-right: 0px;
+  }
 }
 
 .row-action-primary i {
